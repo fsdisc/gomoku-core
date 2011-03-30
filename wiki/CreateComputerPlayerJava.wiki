@@ -1,0 +1,19 @@
+#summary Step-by-step guide to create computer player (AI) in Java
+#labels computerplayer,AI
+
+= Introduction =
+
+To create new computer player (AI) in Java, you start with /Client/java/Player/application/awt project or /Client/java/Player/application/swing project.
+
+= Details =
+
+  * Create new class that inherit from com.bhivef.gomoku.core.Player class.
+  * Override 'public void think(final Move move)' method
+  * In think method, start with checking whether player is ready or not:
+{{{
+if (!getReady()) return;
+}}}
+  * When next move is found, call 'makeMove' method to finish:
+{{{
+makeMove(new Move(row, column, getPiece()));
+}}}
