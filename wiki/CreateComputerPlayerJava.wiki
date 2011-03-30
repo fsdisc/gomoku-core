@@ -17,3 +17,5 @@ if (!getReady()) return;
 {{{
 makeMove(new Move(row, column, getPiece()));
 }}}
+  * In com.bhivef.gomoku.player.application.awt.Game class or com.bhivef.gomoku.player.application.swing.Game class, add code that create new player to 'createUnknownPlayer' method.
+  * In com.bhivef.gomoku.player.application.awt.Runner class or com.bhivef.gomoku.player.application.swing.Runner class, add code for new player to 'getPlayerNames', 'getPlayerIndex', 'getPlayerType' methods
